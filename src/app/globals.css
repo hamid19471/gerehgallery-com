@@ -1,33 +1,44 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@import "../tailwind/components.css";
+@import "tailwindcss/utilities";
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --main-background: theme(colors.main-bg);
+    --footer-background: theme(colors.footer-bg);
+    --content: theme(colors.content);
+    --heading-color: theme(colors.heading-color);
+    --white: theme(colors.white);
+    --black: theme(colors.black);
+    --success: theme(colors.success);
+    --warning: theme(colors.warning);
+    --error: theme(colors.error);
+    --info: theme(colors.info);
+    --neutral: theme(colors.neutral);
+    --accent: theme(colors.accent);
+    --secondary: theme(colors.secondary);
+    --base-25: theme(colors.base-25);
+    --base-50: theme(colors.base-50);
+    --base-75: theme(colors.base-75);
+    --base-100: theme(colors.base-100);
+    --base-200: theme(colors.base-200);
+    --base-300: theme(colors.base-300);
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  body,
+  html {
+    background-color: var(--main-background);
+    color: var(--content);
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--heading-color);
   }
 }
