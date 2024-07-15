@@ -31,6 +31,7 @@
   html {
     background-color: var(--main-background);
     color: var(--content);
+    font-family: var(--font-cabin);
   }
 
   h1,
