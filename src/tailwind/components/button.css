@@ -54,6 +54,14 @@
       }
     }
   }
+  &-link {
+    @apply bg-transparent border-transparent text-black underline;
+    @media (hover: hover) {
+      &:hover {
+        @apply bg-transparent text-black border-transparent;
+      }
+    }
+  }
   &-outline {
     @apply bg-transparent border-black border text-base-300;
     @media (hover: hover) {
