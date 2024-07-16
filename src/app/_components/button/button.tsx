@@ -37,6 +37,7 @@ export const Button: React.FC<ButtonProps> = ({
     { [`${sizeClasses[size]}`]: size },
     { [`${buttonTypeClasses[buttonType]}`]: buttonType },
     { "btn-outline": isOutline },
+    { "btn-link": isLink },
     { "pointer-events-none opacity-80": isLoading }
   );
   return (
