@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const colors: Record<string, string> = {
+  transparent: "transparent",
   "main-bg": "#F5F2EA",
   "footer-bg": "#F7EFE2",
   content: "#2D3556",
