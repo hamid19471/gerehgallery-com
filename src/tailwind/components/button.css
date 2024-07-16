@@ -1,0 +1,139 @@
+.btn {
+  @apply transition-all border duration-200 inline-flex gap-2 px-4 py-2 items-center justify-center rounded-md;
+  @apply bg-black text-white border-black cursor-pointer no-underline text-xl;
+  @media (hover: hover) {
+    &:hover {
+      @apply bg-white text-black border-black;
+    }
+  }
+  &-primary {
+    @apply bg-black text-white border-black;
+    @media (hover: hover) {
+      &:hover {
+        @apply bg-white text-black border-black;
+      }
+    }
+  }
+  &-secondary {
+    @apply bg-secondary text-white border-secondary;
+    @media (hover: hover) {
+      &:hover {
+        @apply bg-white text-secondary border-secondary;
+      }
+    }
+  }
+  &-success {
+    @apply bg-success text-black border-success;
+    @media (hover: hover) {
+      &:hover {
+        @apply bg-white text-success border-success;
+      }
+    }
+  }
+  &-warning {
+    @apply bg-warning text-black border-warning;
+    @media (hover: hover) {
+      &:hover {
+        @apply bg-white text-warning border-warning;
+      }
+    }
+  }
+  &-error {
+    @apply bg-error text-black border-error;
+    @media (hover: hover) {
+      &:hover {
+        @apply bg-white text-error border-error;
+      }
+    }
+  }
+  &-info {
+    @apply bg-info text-black border-info;
+    @media (hover: hover) {
+      &:hover {
+        @apply bg-white text-info border-info;
+      }
+    }
+  }
+  &-outline {
+    @apply bg-transparent border-black border text-base-300;
+    @media (hover: hover) {
+      &:hover {
+        @apply bg-black text-white border-white;
+      }
+    }
+    &-primary {
+      @apply bg-transparent border-black text-black;
+      @media (hover: hover) {
+        &:hover {
+          @apply bg-black text-white border-white;
+        }
+      }
+    }
+    &-secondary {
+      @apply bg-transparent border-secondary text-secondary;
+      @media (hover: hover) {
+        &:hover {
+          @apply bg-secondary text-white border-white;
+        }
+      }
+    }
+    &-success {
+      @apply bg-transparent border-success text-success;
+      @media (hover: hover) {
+        &:hover {
+          @apply bg-success text-black border-white;
+        }
+      }
+    }
+    &-warning {
+      @apply bg-transparent border-warning text-warning;
+      @media (hover: hover) {
+        &:hover {
+          @apply bg-warning text-black border-white;
+        }
+      }
+    }
+    &-error {
+      @apply bg-transparent border-error text-error;
+      @media (hover: hover) {
+        &:hover {
+          @apply bg-error text-black border-white;
+        }
+      }
+    }
+    &-info {
+      @apply bg-transparent border-info text-info;
+      @media (hover: hover) {
+        &:hover {
+          @apply bg-info text-black border-white;
+        }
+      }
+    }
+  }
+  &-xs {
+    @apply h-6 px-2;
+    font-size: 0.75rem;
+  }
+  &-sm {
+    @apply h-8 px-3;
+    font-size: 0.875rem;
+  }
+  &-md {
+    @apply h-10 px-4;
+    font-size: 1rem;
+  }
+  &-lg {
+    @apply h-12 px-5;
+    font-size: 1.125rem;
+  }
+  &-rounded {
+    @apply rounded-full;
+  }
+  &-full {
+    @apply w-full;
+  }
+  &[disabled],
+  &:disabled {
+    @apply bg-black/40 text-base-25;
+  }
+}
