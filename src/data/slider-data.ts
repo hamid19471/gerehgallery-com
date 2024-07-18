@@ -1,4 +1,4 @@
-import { SliderProps } from "@/app/_components/slider/slider.types";
+import { SliderProps } from "@/types/slider.interfase";
 
 export const SliderData: SliderProps[] = [
   {

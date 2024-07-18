@@ -8,21 +8,23 @@ import { useState } from "react";
 export const Slider: React.FC = () => {
   const [current, setCurrent] = useState(0);
   return (
-    <div className="h-[calc(100vh-180px)] overflow-hidden">
+    <div className="h-[calc(100vh-180px)] relative overflow-hidden">
       <div
-        className="w-max h-full transition-all duration-700 ease-in-out"
+        className="w-full h-full transition-all duration-700 ease-in-out"
         style={{ transform: `translateY(-${current * 100}%)` }}
       >
         {SliderData.map((slider) => (
           <div
-            className="w-screen h-full flex flex-col gap-16 xl:flex-row"
+            className="w-full md:w-screen h-full flex flex-col gap-4 lg:gap-16 xl:flex-row"
             key={`slider-image-${slider.id}`}
           >
             <div className="w-full xl:w-1/2 flex flex-col items-center justify-center gap-8 text-center h-1/2 xl:h-full">
               <h4 className="font-semibold text-xl lg:text-2xl xl:text-3xl">
                 {slider.description}
               </h4>
-              <h2 className="font-bold text-7xl">{slider.title}</h2>
+              <h2 className="font-bold xl:text-7xl text-4xl ">
+                {slider.title}
+              </h2>
               <Link href={slider.url}>
                 <Button size="large">Shop Now</Button>
               </Link>
@@ -39,7 +41,7 @@ export const Slider: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className="absolute m-auto left-1/2 bottom-20 flex gap-4">
+      <div className="absolute m-auto left-1/2 bottom-4 flex gap-4">
         {SliderData.map((slider, index) => (
           <div
             key={`circle-${slider.id}`}
