@@ -41,6 +41,23 @@ export default function Home() {
         </div>
         <ProductList />
       </div>
+      <div className="mt-28 mb-12">
+        <Divider />
+      </div>
+      <div className="container flex flex-col lg:flex-row items-center justify-between gap-3 mb-12">
+        <div className="bg-black/10 w-full py-4 px-8 rounded-lg inline-flex justify-center gap-2 shadow-lg">
+          <h4>Worldwide Shipping</h4>
+        </div>
+        <div className="bg-black/10 w-full py-4 px-8 rounded-lg inline-flex justify-center gap-2 shadow-lg">
+          <h4>10 Days Return Policy</h4>
+        </div>
+        <div className="bg-black/10 w-full py-4 px-8 rounded-lg inline-flex justify-center gap-2 shadow-lg">
+          <h4>Original Product</h4>
+        </div>
+        <div className="bg-black/10 w-full py-4 px-8 rounded-lg inline-flex justify-center gap-2 shadow-lg">
+          <h4>Secure Payment</h4>
+        </div>
+      </div>
     </div>
   );
 }

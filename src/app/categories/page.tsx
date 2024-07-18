@@ -1,4 +1,4 @@
 const CategoriesPage = () => {
-  return <div>Categories Page</div>;
+  return <div>Product Categories</div>;
 };
 export default CategoriesPage;
