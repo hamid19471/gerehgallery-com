@@ -1,0 +1,38 @@
+export const ProductData = [
+  {
+    id: 1,
+    title: "Product 01",
+    price: 400,
+    description: "This is a product 01",
+    image: "/images/dummy-image/image-01.jpg",
+    secondImage: "/images/dummy-image/image-02.jpg",
+    url: "/product/1",
+  },
+  {
+    id: 2,
+    title: "Product 02",
+    price: 500,
+    description: "This is a product 02",
+    image: "/images/dummy-image/image-01.jpg",
+    secondImage: "/images/dummy-image/image-02.jpg",
+    url: "/product/2",
+  },
+  {
+    id: 3,
+    title: "Product 03",
+    price: 600,
+    description: "This is a product 03",
+    image: "/images/dummy-image/image-01.jpg",
+    secondImage: "/images/dummy-image/image-02.jpg",
+    url: "/product/3",
+  },
+  {
+    id: 4,
+    title: "Product 04",
+    price: 700,
+    description: "This is a product 04",
+    image: "/images/dummy-image/image-01.jpg",
+    secondImage: "/images/dummy-image/image-02.jpg",
+    url: "/product/4",
+  },
+];
