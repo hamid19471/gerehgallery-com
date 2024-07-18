@@ -3,7 +3,7 @@ import Image from "next/image";
 export const Footer: React.FC = () => {
   return (
     <footer className="pt-20 bg-footer-bg flex flex-col">
-      <div className="container max-w-6xl grid lg:grid-cols-4 grid-cols-2 gap-12 px-4 lg:px-0">
+      <div className="container max-w-6xl grid lg:grid-cols-5 grid-cols-2 gap-12 px-4 lg:px-0">
         <div className="flex flex-col gap-4 col-span-2">
           <div>
             <Image
@@ -64,7 +64,7 @@ export const Footer: React.FC = () => {
       </div>
       <div className="bg-content text-white mt-20 py-4">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-3 container max-w-6xl">
-          <div>Allright Reserved - 2024 | Developer by Hamid Asadi</div>
+          <div>Allright Reserved - 2024 | Developed by Hamid Asadi</div>
           <div>
             <ul className="flex items-center justify-center gap-6">
               <li>About</li>
