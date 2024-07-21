@@ -21,7 +21,11 @@ export const Tabs: React.FC<TabsProps> = ({ tabs }) => {
         ))}
       </div>
       {tabs.map((tab, index) => (
-        <div className="tab-content" key={`tab-content-${index}`}>
+        <div
+          className="tab-content"
+          key={`tab-content-${index}`}
+          style={{ display: index === active ? "block" : "none" }}
+        >
           {typeof tab.content === "string" ? (
             <div
               dangerouslySetInnerHTML={{ __html: tab.content as TrustedHTML }}
