@@ -16,7 +16,7 @@ const ShopPage = () => {
             Signup Now
           </Button>
         </div>
-        <div className="relative h-full w-full mb-14">
+        <div className="relative h-full w-full mb-14 hidden lg:block">
           <Image
             src={"/images/dummy-image/image-04.png"}
             alt=""
