@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 export const Navigation = () => {
   const pathname = usePathname();
   return (
-    <nav className="flex flex-col lg:flex-row fixed w-1/2 lg:pt-0 bg-black lg:bg-main-bg lg:w-auto top-16 lg:top-0 h-screen lg:h-auto right-0 lg:relative items-center justify-center gap-12 ">
+    <nav className="flex z-50 flex-col lg:flex-row fixed w-full h-full  lg:pt-0 bg-black lg:bg-main-bg lg:w-auto top-16 lg:top-0  lg:h-auto right-0 lg:relative items-center justify-center gap-12 ">
       {HeaderNav.map((item, index) => {
         const isActive = pathname === item.href;
         return (
