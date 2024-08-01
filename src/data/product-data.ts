@@ -6,7 +6,7 @@ export const ProductData = [
     description: "This is a product 01",
     image: "/images/dummy-image/image-01.jpg",
     secondImage: "/images/dummy-image/image-02.jpg",
-    url: "/product/1",
+    url: "/product/product-01",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const ProductData = [
     description: "This is a product 02",
     image: "/images/dummy-image/image-01.jpg",
     secondImage: "/images/dummy-image/image-02.jpg",
-    url: "/product/2",
+    url: "/product/product-02",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const ProductData = [
     description: "This is a product 03",
     image: "/images/dummy-image/image-01.jpg",
     secondImage: "/images/dummy-image/image-02.jpg",
-    url: "/product/3",
+    url: "/product/product-03",
   },
   {
     id: 4,
@@ -33,6 +33,6 @@ export const ProductData = [
     description: "This is a product 04",
     image: "/images/dummy-image/image-01.jpg",
     secondImage: "/images/dummy-image/image-02.jpg",
-    url: "/product/4",
+    url: "/product/product-04",
   },
 ];
