@@ -5,8 +5,12 @@ import { Slider } from "./_components/slider";
 import { ShopSection, TopCategorySection } from "./_components/home-sections";
 import { OtherCategories } from "./_components/home-sections/other-categories/other-categories";
 import { ProductList } from "./product/_components";
+import { wixClientServer } from "@/lib/wix-client-server";
 
-export default function Home() {
+const HomePage = async () => {
+  const wixClient = await wixClientServer();
+  const res = await wixClient.products.queryProducts().find();
+
   return (
     <div>
       <Slider />
@@ -60,4 +64,5 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+export default HomePage;
