@@ -15,7 +15,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <div className="flex flex-col w-full items-start justify-center">
       <Link
-        href={"/"}
+        href={`${url}`}
         className="flex flex-col w-full items-center justify-center"
       >
         <div className="relative w-full h-[358px] overflow-hidden">
