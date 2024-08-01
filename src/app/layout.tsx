@@ -3,6 +3,7 @@ import { Cabin_Condensed } from "next/font/google";
 import "./globals.css";
 import { Header } from "./_components/header";
 import { Footer } from "./_components/footer";
+import { WixContextProvider } from "@/context/wix-context";
 
 const CabinCon = Cabin_Condensed({
   subsets: ["latin"],
@@ -27,9 +28,11 @@ export default function RootLayout({
         className="grid grid-rows-[132px_1fr_auto] h-screen"
         suppressHydrationWarning={true}
       >
-        <Header />
-        {children}
-        <Footer />
+        <WixContextProvider>
+          <Header />
+          {children}
+          <Footer />
+        </WixContextProvider>
       </body>
     </html>
   );
