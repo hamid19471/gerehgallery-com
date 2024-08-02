@@ -1,9 +1,20 @@
 export type ProductCardProps = {
-  id: number;
-  title: string;
-  price: number;
-  description: string;
-  image: string;
-  secondImage: string;
-  url: string;
+  _id?: string | undefined;
+  name?: string;
+  slug?: string;
+  productType?: string;
+  description?: string;
+  sku?: string;
+  price?: {
+    currency?: string;
+    price?: number;
+    discountedPrice?: number;
+  };
+  media?: {
+    mainMedia?: {
+      image?: {
+        url?: string;
+      };
+    };
+  };
 };

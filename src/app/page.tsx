@@ -43,7 +43,10 @@ const HomePage = async () => {
             <Button size="large">View All</Button>
           </Link>
         </div>
-        <ProductList />
+        <ProductList
+          categoryId={process.env.TOP_PRODUCT_CATEGORY_ID!}
+          limit={4}
+        />
       </div>
       <div className="mt-28 mb-12">
         <Divider />
