@@ -8,7 +8,7 @@ export const ShopSection: React.FC = () => {
       <div className="relative w-full  grid gap-4 grid-cols-1 lg:grid-cols-2 ">
         <div className="rounded-lg relative overflow-hidden group">
           <Image
-            src={"/images/dummy-image/image-01.jpg"}
+            src={"/images/home-cat-01.jpg"}
             width={750}
             height={750}
             alt="Gereh Gifts"
@@ -28,7 +28,7 @@ export const ShopSection: React.FC = () => {
         </div>
         <div className="relative w-full overflow-hidden group rounded-lg">
           <Image
-            src={"/images/dummy-image/image-01.jpg"}
+            src={"/images/home-cat-02.jpg"}
             width={750}
             height={750}
             alt="Gereh Gifts"
@@ -48,7 +48,7 @@ export const ShopSection: React.FC = () => {
         </div>
         <div className="relative w-full overflow-hidden group rounded-lg">
           <Image
-            src={"/images/dummy-image/image-01.jpg"}
+            src={"/images/home-cat-03.jpg"}
             width={750}
             height={750}
             alt="Gereh Gifts"
@@ -68,7 +68,7 @@ export const ShopSection: React.FC = () => {
         </div>
         <div className="relative w-full overflow-hidden group rounded-lg">
           <Image
-            src={"/images/dummy-image/image-01.jpg"}
+            src={"/images/home-cat-04.jpg"}
             width={750}
             height={750}
             alt="Gereh Gifts"

@@ -3,48 +3,30 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const ImageGallery = [
-  {
-    id: 1,
-    image: "/images/dummy-image/image-01.jpg",
-  },
-  {
-    id: 2,
-    image: "/images/dummy-image/image-02.jpg",
-  },
-  {
-    id: 3,
-    image: "/images/dummy-image/image-03.webp",
-  },
-  {
-    id: 4,
-    image: "/images/dummy-image/image-04.png",
-  },
-];
-export const ProductImage: React.FC = () => {
+export const ProductImage = ({ images }: { images: any }) => {
   const [activeImage, setActiveImage] = useState(0);
   return (
     <div className="flex flex-col items-center gap-4 w-full ">
-      <div className="w-full h-[500px] relative">
+      <div className="w-full h-[670px] relative">
         <Image
-          src={ImageGallery[activeImage].image}
-          alt=""
+          src={images[activeImage].image?.url}
+          alt={images[activeImage].title}
           fill
           sizes="50vw"
           className="object-cover rounded-xl"
         />
       </div>
-      <div className="flex items-center justify-between gap-3 rounded-xl w-full cursor-pointer">
-        {ImageGallery.map((image, index) => (
+      <div className="flex items-center justify-start gap-3 rounded-xl w-full cursor-pointer">
+        {images.map((image: any, index: number) => (
           <div
-            key={`image-${image.id}`}
+            key={`image-${image._id}`}
             onClick={() => setActiveImage(index)}
             className="overflow-hidden h-36 relative w-1/4"
           >
             <Image
               className="overflow-hidden object-cover rounded-xl"
-              src={image.image}
-              alt=""
+              src={image.image?.url}
+              alt={image.title}
               fill
               sizes="30vw"
             />

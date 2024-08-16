@@ -6,6 +6,7 @@ const colors: Record<string, string> = {
   "footer-bg": "#F7EFE2",
   content: "#2D3556",
   "heading-color": "#222222",
+  primary: "#007BEC",
   white: "#ffff",
   black: "#000",
   success: "#36d399",

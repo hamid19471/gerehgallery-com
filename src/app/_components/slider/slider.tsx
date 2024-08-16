@@ -35,7 +35,7 @@ export const Slider: React.FC = () => {
                 alt={slider.title}
                 fill
                 sizes="100%"
-                className="object-cover object-right"
+                className="object-cover object-center"
               />
             </div>
           </div>

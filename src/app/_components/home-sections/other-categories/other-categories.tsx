@@ -7,7 +7,7 @@ export const OtherCategories: React.FC = () => {
     <div className="relative w-max grid grid-cols-2 m-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center justify-between gap-8">
       <div className="rounded-lg relative overflow-hidden group">
         <Image
-          src={"/images/dummy-image/image-02.jpg"}
+          src={"/images/stand-01.jpg"}
           width={290}
           height={597}
           alt="Gereh Gifts"
@@ -27,7 +27,7 @@ export const OtherCategories: React.FC = () => {
       </div>
       <div className="rounded-lg relative overflow-hidden group">
         <Image
-          src={"/images/dummy-image/image-02.jpg"}
+          src={"/images/stand-02.jpg"}
           width={290}
           height={597}
           alt="Gereh Gifts"
@@ -47,7 +47,7 @@ export const OtherCategories: React.FC = () => {
       </div>
       <div className="rounded-lg relative overflow-hidden group">
         <Image
-          src={"/images/dummy-image/image-02.jpg"}
+          src={"/images/stand-03.jpg"}
           width={290}
           height={597}
           alt="Gereh Gifts"
@@ -67,7 +67,7 @@ export const OtherCategories: React.FC = () => {
       </div>
       <div className="rounded-lg relative overflow-hidden group">
         <Image
-          src={"/images/dummy-image/image-02.jpg"}
+          src={"/images/stand-04.jpg"}
           width={290}
           height={597}
           alt="Gereh Gifts"

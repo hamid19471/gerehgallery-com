@@ -5,7 +5,7 @@ export const TopCategorySection: React.FC = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 mb-12 container">
       <div className="flex flex-col items-center justify-center group overflow-hidden w-full rounded-lg">
         <Image
-          src={"/images/dummy-image/image-01.jpg"}
+          src={"/images/home-01.webp"}
           alt=""
           width={347}
           height={323}
@@ -17,7 +17,7 @@ export const TopCategorySection: React.FC = () => {
       </div>
       <div className="flex flex-col items-center justify-center group overflow-hidden w-full rounded-lg">
         <Image
-          src={"/images/dummy-image/image-01.jpg"}
+          src={"/images/home-02.webp"}
           alt=""
           width={347}
           height={323}
@@ -29,7 +29,7 @@ export const TopCategorySection: React.FC = () => {
       </div>
       <div className="flex flex-col items-center justify-center group overflow-hidden w-full rounded-lg">
         <Image
-          src={"/images/dummy-image/image-01.jpg"}
+          src={"/images/home-03.webp"}
           alt=""
           width={347}
           height={323}
@@ -41,7 +41,7 @@ export const TopCategorySection: React.FC = () => {
       </div>
       <div className="flex flex-col items-center justify-center group overflow-hidden w-full rounded-lg">
         <Image
-          src={"/images/dummy-image/image-01.jpg"}
+          src={"/images/home-04.webp"}
           alt=""
           width={347}
           height={323}
@@ -53,7 +53,7 @@ export const TopCategorySection: React.FC = () => {
       </div>
       <div className="flex flex-col items-center justify-center group overflow-hidden w-full rounded-lg">
         <Image
-          src={"/images/dummy-image/image-01.jpg"}
+          src={"/images/home-05.webp"}
           alt=""
           width={347}
           height={323}
@@ -65,7 +65,7 @@ export const TopCategorySection: React.FC = () => {
       </div>
       <div className="flex flex-col items-center justify-center group overflow-hidden w-full rounded-lg">
         <Image
-          src={"/images/dummy-image/image-01.jpg"}
+          src={"/images/home-06.webp"}
           alt=""
           width={347}
           height={323}
@@ -77,7 +77,7 @@ export const TopCategorySection: React.FC = () => {
       </div>
       <div className="flex flex-col items-center justify-center group overflow-hidden w-full rounded-lg">
         <Image
-          src={"/images/dummy-image/image-01.jpg"}
+          src={"/images/home-07.webp"}
           alt=""
           width={347}
           height={323}
@@ -89,7 +89,7 @@ export const TopCategorySection: React.FC = () => {
       </div>
       <div className="flex flex-col items-center justify-center group overflow-hidden w-full rounded-lg">
         <Image
-          src={"/images/dummy-image/image-01.jpg"}
+          src={"/images/home-08.webp"}
           alt=""
           width={347}
           height={323}

@@ -69,15 +69,15 @@
         @apply bg-black text-white border-white;
       }
     }
-    &-primary {
-      @apply bg-transparent border-black text-black;
+    &.btn-primary {
+      @apply bg-transparent border-primary text-primary;
       @media (hover: hover) {
         &:hover {
-          @apply bg-black text-white border-white;
+          @apply bg-primary text-white border-primary;
         }
       }
     }
-    &-secondary {
+    &.btn-secondary {
       @apply bg-transparent border-secondary text-secondary;
       @media (hover: hover) {
         &:hover {
@@ -85,7 +85,7 @@
         }
       }
     }
-    &-success {
+    &.btn-success {
       @apply bg-transparent border-success text-success;
       @media (hover: hover) {
         &:hover {
@@ -93,7 +93,7 @@
         }
       }
     }
-    &-warning {
+    &.btn-warning {
       @apply bg-transparent border-warning text-warning;
       @media (hover: hover) {
         &:hover {
@@ -101,7 +101,7 @@
         }
       }
     }
-    &-error {
+    &.btn-error {
       @apply bg-transparent border-error text-error;
       @media (hover: hover) {
         &:hover {
@@ -109,7 +109,7 @@
         }
       }
     }
-    &-info {
+    &.btn-info {
       @apply bg-transparent border-info text-info;
       @media (hover: hover) {
         &:hover {
@@ -142,6 +142,6 @@
   }
   &[disabled],
   &:disabled {
-    @apply bg-black/40 text-base-25;
+    @apply bg-black/40 text-base-25 border-none cursor-not-allowed hover:bg-black/40 hover:text-black/50;
   }
 }

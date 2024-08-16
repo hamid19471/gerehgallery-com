@@ -42,7 +42,6 @@ export const Button: React.FC<ButtonProps> = ({
   );
   return (
     <button className={classes} type={type} disabled={isDisable} {...rest}>
-      {isLoading && <div>{loadingText}</div>}
       {isLoading ? loadingText : children}
     </button>
   );
