@@ -1,4 +1,4 @@
-export const AboutPage: React.FC = () => {
+export const AboutPage= () => {
   return <div>About Page</div>;
 };
 export default AboutPage;
