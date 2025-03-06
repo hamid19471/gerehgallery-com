@@ -39,7 +39,7 @@ export const CartModal: React.FC<Props> = ({ children, setShopCart }) => {
       <div className="flex flex-col w-full gap-2 border-b border-t border-base-25/10 py-4 my-6">
         <div className="flex items-center justify-between">
           <h4 className="font-bold text-lg">Subtotal</h4>
-          <p className="font-bold text-xl">{cart.subtotal.amount} $</p>
+          <p className="font-bold text-xl">{subtotal.amount} $</p>
         </div>
         <p className="text-xs text-base-50 font-light">
           Shipping and taxs calculated at checkout
