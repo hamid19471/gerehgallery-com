@@ -34,7 +34,7 @@ export const Header: React.FC = () => {
             </Link>
             <div className="relative">
               <span className="absolute -top-3 -right-2 w-4 h-4 text-sm rounded-full bg-error text-white flex items-center justify-center">
-                {cart.lineItems?.length || 0}
+                {cart?.lineItems?.length || 0}
               </span>
               <Image
                 src={"/icons/shop.svg"}
@@ -49,7 +49,7 @@ export const Header: React.FC = () => {
                   <div className="max-h-[250px] overflow-scroll">
                     {isLoading
                       ? "Loading..."
-                      : cart.lineItems?.map((item) => (
+                      : cart?.lineItems?.map((item) => (
                           <div
                             className="flex flex-col items-start gap-2 mt-6"
                             key={item._id}

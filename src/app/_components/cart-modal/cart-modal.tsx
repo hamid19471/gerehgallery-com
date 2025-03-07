@@ -13,6 +13,18 @@ export const CartModal: React.FC<Props> = ({ children, setShopCart }) => {
   const wixClient = useWixClient();
   const { cart } = useCartStore();
   console.log(cart);
+
+  // محاسبه subtotal به صورت دستی در صورت عدم وجود در API
+  let subtotal = 0;
+  if (cart?.lineItems) {
+    subtotal = cart.lineItems.reduce((acc, item) => {
+      // تبدیل مقدار قیمت به نوع number و همچنین مقدار quantity
+      const priceAmount = Number(item.price?.amount) || 0; // تبدیل به number
+      const quantity = item.quantity ?? 0; // مقدار پیش‌فرض 0 در صورت عدم وجود quantity
+      return acc + priceAmount * quantity;
+    }, 0);
+  }
+
   const ref = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     const clickOutSide = (event: MouseEvent) => {
@@ -26,6 +38,7 @@ export const CartModal: React.FC<Props> = ({ children, setShopCart }) => {
       document.removeEventListener("mousedown", clickOutSide);
     };
   }, [setShopCart]);
+
   return (
     <div
       ref={ref}
@@ -39,7 +52,7 @@ export const CartModal: React.FC<Props> = ({ children, setShopCart }) => {
       <div className="flex flex-col w-full gap-2 border-b border-t border-base-25/10 py-4 my-6">
         <div className="flex items-center justify-between">
           <h4 className="font-bold text-lg">Subtotal</h4>
-          <p className="font-bold text-xl">{subtotal.amount} $</p>
+          <p className="font-bold text-xl">{subtotal} $</p>
         </div>
         <p className="text-xs text-base-50 font-light">
           Shipping and taxs calculated at checkout
